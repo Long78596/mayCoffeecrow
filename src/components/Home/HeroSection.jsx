@@ -4,7 +4,7 @@ export const HeroSection = () => {
       <div className="bg-[#fee7d8] rounded-lg flex flex-col-reverse lg:flex-row gap-6 lg:gap-10">
         {/* Left content */}
         <div className="flex flex-col justify-center gap-2  lg:px-8 lg:w-[495px] m-2">
-          <p className="font-bold  md:text-xl lg:text-2xl text-[#0a7485]">
+          <p className="font-bold  md:text-xl lg:text-xl text-[#0a7485]">
             🔥 STRONG. BOLD. SMOOTH. 🔥
           </p>
           <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0a7485]">
