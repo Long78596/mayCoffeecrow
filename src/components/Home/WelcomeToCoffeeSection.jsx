@@ -32,65 +32,64 @@ const cards = [
 
 export const WelcomeCoffeeSection = () => {
   return (
-    <section>
+    <section className="py-10 px-4">
       <div className="container mx-auto">
-        <h1 className="text-5xl text-center font-bold py-4 lg:py-10 text-[#065e6c]">
+        <h1 className="text-3xl md:text-5xl text-center font-bold text-[#065e6c] leading-tight">
           PREMIUM
-          <br className="md:hidden" />
-          VIETNAMESE COFFEE
+          <br className="md:hidden" /> VIETNAMESE COFFEE
         </h1>
 
-        <div className="rounded bg-[#90e9f6] flex flex-col xl:flex-row gap-2 xl:gap-6">
+        <div className="rounded bg-[#90e9f6] mt-6 flex flex-col xl:flex-row gap-4 xl:gap-6">
           {/* Left Section */}
-          <div className="flex flex-col justify-end xl:space-y-4 w-full xl:max-w-[17rem] pt-6 xl:pt-0">
-            <div className="uppercase text-2xl md:text-4xl xl:text-5xl font-bold text-right flex items-center justify-center xl:items-end xl:flex-col gap-y-2">
-              <span className="text-4xl text-[#065e6c]">
-                <strong> Welcome to</strong>
-              </span>
-              <span className="tracking-wider text-center  font-bold text-[#90e9f6] stroke-text">
+          <div className="flex flex-col items-center text-center xl:text-right justify-end xl:space-y-4 w-full xl:max-w-[17rem] pt-6 xl:pt-0 px-4">
+            <div className="uppercase text-2xl md:text-3xl xl:text-4xl font-bold text-[#065e6c]">
+              Welcome to
+              <div className="tracking-wider font-bold text-[#90e9f6] stroke-text">
                 THE CREW
-              </span>
+              </div>
             </div>
-            <p className="font-bold text-center text-[#065e6c]">
+            <p className="font-bold text-[#065e6c] mt-2">
               SO GOOD, WE HAD TO SHARE
             </p>
             <img
               loading="eager"
               src="https://cdn.shopify.com/s/files/1/0611/1956/1867/files/crew.svg?v=1699500244"
               alt=""
-              className="hidden xl:block"
+              className="hidden xl:block w-full"
             />
           </div>
 
           {/* Slider Section */}
-          <div className="flex-1 w-full xl:py-6 flex justify-between mt-4 xl:mt-0 px-4 gap-6 xl:pl-0 overflow-x-auto xl:overflow-x-hidden">
+          <div className="flex-1 w-full xl:py-6 flex xl:justify-between mt-4 xl:mt-0 px-2 xl:pl-0 overflow-x-auto xl:overflow-x-hidden snap-x gap-4">
             {cards.map((card, index) => {
               const CardTag = card.isExternal ? "a" : Link;
               const cardProps = card.isExternal
-                ? { href: card.link }
+                ? {
+                    href: card.link,
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                  }
                 : { to: card.link };
 
               return (
                 <div
                   key={index}
                   style={{ backgroundColor: card.bg }}
-                  className=" md:m-3 lg:m-4 rounded-xl p-4 flex flex-col text-primary w-[300px]  h-[380px]"
+                  className="min-w-[80%] md:min-w-[250px] rounded-xl p-4 flex flex-col text-primary h-[400px] snap-center"
                 >
                   <img
                     loading="eager"
                     className="h-[180px] w-auto mx-auto my-4"
                     src={card.image}
-                    alt=""
+                    alt={card.title}
                   />
                   <div className="flex flex-col justify-between h-full">
                     <div>
-                      <p className="font-bold text-[#065e6c]">
-                        <strong>{card.title}</strong>
-                      </p>
+                      <p className="font-bold text-[#065e6c]">{card.title}</p>
                       <p className="text-xs my-2 text-[#065e6c]">{card.desc}</p>
                     </div>
                     <CardTag {...cardProps}>
-                      <button className="bg-[#065e6c] cursor-pointer text-white rounded-full px-4 lg:px-12 py-2 font-medium uppercase text-sm whitespace-nowrap hover:brightness-125">
+                      <button className="bg-[#065e6c] text-white rounded-full px-6 py-2 font-medium uppercase text-sm hover:brightness-110">
                         Shop now
                       </button>
                     </CardTag>
@@ -100,25 +99,12 @@ export const WelcomeCoffeeSection = () => {
             })}
           </div>
 
-          {/* Navigator Dots */}
-          <div className="lg:hidden mt-4 flex space-x-6 justify-center items-center">
-            <div className="rotate-180">
-              <i className="fa-solid fa-arrow-right"></i>
-            </div>
-            <div className="flex space-x-1">
-              <div className="h-2 w-4 border-primary border rounded-full bg-primary"></div>
-              <div className="h-2 w-2 border-primary border rounded-full"></div>
-              <div className="h-2 w-2 border-primary border rounded-full"></div>
-            </div>
-            <i className="fa-solid fa-arrow-right"></i>
-          </div>
-
-          {/* Crew Image for mobile */}
+          {/* Crew image for mobile */}
           <img
             loading="eager"
             src="https://cdn.shopify.com/s/files/1/0611/1956/1867/files/crew.svg?v=1699500244"
             alt=""
-            className="xl:hidden"
+            className="xl:hidden mt-6 w-full"
           />
         </div>
       </div>

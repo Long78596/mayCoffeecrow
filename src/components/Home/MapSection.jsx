@@ -57,10 +57,10 @@ const MapSection = () => {
           {faqData.map((item, index) => (
             <div key={index} className="mb-4">
               <div className="flex items-center pb-3">
-                <span className="text-6xl md:text-h2 font-semibold mr-4">
+                <span className="lg:text-6xl text-4xl m-2 md:text-h2 font-semibold mr-4">
                   {index + 1}
                 </span>
-                <span className="font-semibold  cursor-pointer hover:brightness-125">
+                <span className="font-medium cursor-pointer hover:brightness-125">
                   {item.question}
                 </span>
               </div>

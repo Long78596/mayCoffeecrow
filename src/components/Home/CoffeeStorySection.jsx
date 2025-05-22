@@ -4,7 +4,7 @@ export const CoffeeStorySection=()=>{
     return (
       <section>
         <div className="container mx-auto text-[#28707b] my-10 lg:my-20">
-          <div className="border border-[#1e5057] rounded-xl ">
+          <div className="border border-[#1e5057] rounded-xl  m-2 overflow-hidden">
             <div className="container-content pb-0 px-4 md:px-12">
               <p className="text-4xl lg:text-6xl font-anton text-[#09464f] uppercase">
                 <strong>Did you Know?</strong>
