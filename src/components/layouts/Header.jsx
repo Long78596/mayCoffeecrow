@@ -201,14 +201,16 @@ export const Header = () => {
 
           {/* Slide menu */}
           {isMenuOpen && (
-            <div className=" mt-5 w-full h-full fixed left-0 top-[56px]  flex flex-col justify-between bg-black/80">
+            <div className="mt-6 w-full h-full fixed left-0 top-[56px] z-[9999] flex">
+              {/* Side menu */}
               <div
-                className="flex-1 h-full w-[80vw] px-4 text-white"
-                style={{ backgroundColor: "rgb(18, 111, 134)" }}
+                className="flex-1 h-full w-[80vw] px-4 text-white "
+                style={{ backgroundColor: "#006b7f" }}
               >
                 <div className="text-xl flex flex-col py-4">
+                  {/* SHOP */}
                   <div
-                    className="border-b py-2 flex justify-between  cursor-pointer"
+                    className="border-b border-white py-2 flex justify-between items-center cursor-pointer"
                     onClick={() => setOpen(!open)}
                   >
                     <span className="uppercase font-semibold text-white">
@@ -221,48 +223,62 @@ export const Header = () => {
                     />
                   </div>
 
+                  {/* Dropdown content */}
                   {open && (
-                    <ul className="pl-4 text-lg  text-white transition-all duration-300">
-                      <li className="py-1 border-b uppercase">
+                    <ul className="pl-4 text-lg text-white transition-all duration-300 my-2">
+                      <li className="py-2 border-b border-white uppercase">
                         <Link to="/collection">Shop all</Link>
                       </li>
-                      <li className="py-1 border-b uppercase">
+                      <li className="py-2 border-b border-white uppercase">
                         <Link to="/collection">Coffee</Link>
                       </li>
-                      <li className="py-1 border-b uppercase">
+                      <li className="py-2 border-b border-white uppercase">
                         <Link to="/collection">Brew tools</Link>
                       </li>
-                      <li className="py-1 border-b uppercase">
+                      <li className="py-2 border-b border-white uppercase">
                         <Link to="/collection">Bundles</Link>
                       </li>
                     </ul>
                   )}
 
+                  {/* WHOLESALE */}
                   <Link
                     to="#"
-                    className="uppercase border-b mb-2 font-semibold"
+                    className="uppercase border-b border-white py-2 font-semibold"
                   >
                     Wholesale
                   </Link>
 
-                  <div className="grid grid-cols-1 mt-10 gap-2">
-                    <a href="/collections" onClick={closeMenu}>
+                  {/* ABOUT */}
+                  <div className="border-b border-white py-2 font-semibold uppercase">
+                    About
+                  </div>
+
+                  {/* STOCKISTS */}
+                  <div className="border-b border-white py-2 font-semibold uppercase">
+                    Stockists
+                  </div>
+
+                  {/* Bottom links */}
+                  <div className="grid grid-cols-1 mt-10 gap-2 text-base">
+                    <Link to="/collections" onClick={closeMenu}>
                       Shop
-                    </a>
-                    <a href="/pages/sustainability" onClick={closeMenu}>
+                    </Link>
+                    <Link to="/pages/sustainability" onClick={closeMenu}>
                       Sustainability
-                    </a>
-                    <a href="/pages/about-our-story" onClick={closeMenu}>
+                    </Link>
+                    <Link to="/pages/about-our-story" onClick={closeMenu}>
                       About Us
-                    </a>
-                    <a href="/pages/about-coffee" onClick={closeMenu}>
+                    </Link>
+                    <Link to="/pages/about-coffee" onClick={closeMenu}>
                       Our coffee
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
+
               {/* Overlay click to close */}
-              <div className="flex-1" onClick={closeMenu}></div>
+              <div className="flex-1 bg-black/80" onClick={closeMenu}></div>
             </div>
           )}
         </div>

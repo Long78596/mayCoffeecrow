@@ -4,16 +4,16 @@ import { Footer } from "./Footer";
 
 export  const MainLayout=()=>{
 
-    return(
-        <>
-        <div className="flex">
-            <Header />
-            <main class="flex-1">
-              <Outlet />
-            </main>
-            <Footer/>
+    return (
+      <>
+        <div className="flex flex-col min-h-screen">
+          <Header />
+          <main className="flex-grow">
+            <Outlet />
+          </main>
+          <Footer />
         </div>
-        </>
-    )
+      </>
+    );
 
 }
