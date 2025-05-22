@@ -103,25 +103,25 @@ export const Footer = () => {
             <div className="flex space-y-2 mt-5 items-center gap-5 justify-center">
               <Link
                 to="#"
-                className="flex justify-center items-center w-10 h-10 bg-teal-700 rounded-full"
+                className="flex justify-center items-center w-10 h-10 bg-[#065e6c] rounded-full"
               >
                 <FaFacebookF className="text-white text-2xl" />
               </Link>
               <Link
                 to="#"
-                className="flex justify-center items-center w-10 h-10 bg-teal-700 rounded-full"
+                className="flex justify-center items-center w-10 h-10 bg-[#065e6c] rounded-full"
               >
                 <FaInstagram className="text-white text-2xl" />
               </Link>
               <Link
                 to="#"
-                className="flex justify-center items-center w-10 h-10 bg-teal-700 rounded-full"
+                className="flex justify-center items-center w-10 h-10 bg-[#065e6c] rounded-full"
               >
                 <FaTiktok className="text-white text-2xl" />
               </Link>
               <Link
                 to="#"
-                className="flex justify-center items-center w-10 h-10 bg-teal-700 rounded-full"
+                className="flex justify-center items-center w-10 h-10 bg-[#065e6c] rounded-full"
               >
                 <FaYoutube className="text-white text-2xl" />
               </Link>
@@ -143,7 +143,7 @@ export const Footer = () => {
                     onClick={() => toggle(idx)}
                     className="w-full flex items-center justify-between md:cursor-default"
                   >
-                    <span className="text-teal-800 text-4xl font-bold text-left">
+                    <span className="text-[#044a54] text-4xl font-bold text-left">
                       {data.title}
                     </span>
 
@@ -179,3 +179,4 @@ export const Footer = () => {
     </footer>
   );
 };
+

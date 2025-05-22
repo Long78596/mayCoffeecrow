@@ -27,7 +27,7 @@ export const HeroSection=()=>{
              </p>
              <div className="pb-4">
                <a>
-                 <button className="rounded-full text-white text-2xl bg-[#0a7485] px-4 lg:px-12 py-2 font-medium uppercase hover:brightness-125 cursor-pointer">
+                 <button className="rounded-full text-white bg-[#0a7485] px-4 lg:px-12 py-2 font-medium uppercase hover:brightness-125 cursor-pointer">
                    Shop Now
                  </button>
                </a>

@@ -53,19 +53,22 @@ export const Header = () => {
     <>
       <header className="w-full">
         {/* === giao diện desktop === */}
+        <div className="h-[96px] hidden md:block"></div>
+
+        {/* === giao diện desktop cố định === */}
         <div className="hidden md:block">
-          <div className="bg-orange-200 text-center py-2 text-sm font-semibold text-teal-700">
+          <div className="bg-orange-200 text-center py-2 text-sm font-semibold text-teal-700 fixed top-0 left-0 w-full z-[999]">
             <p>
               <strong>FREE SHIPPING ON ALL ORDERS $65+</strong>
             </p>
           </div>
 
           <div
-            className=" text-white py-2"
+            className="fixed top-[32px] left-0 w-full z-[999] text-white py-2"
             style={{ backgroundColor: "rgb(18, 111, 134)" }}
           >
             <div className="container mx-auto px-4 flex justify-between items-center">
-              {/* Social Icons */}
+              {/*  Icons */}
               <div className="flex gap-2 text-lg">
                 {[FaFacebook, FaInstagram, FaTiktok, FaYoutube].map(
                   (Icon, i) => (
@@ -176,35 +179,38 @@ export const Header = () => {
 
         {/* === giao diện trên MOBILE  === */}
         <div className="block md:hidden">
-          {/* Marquee banner */}
-          <div className="bg-orange-200 text-center py-2 text-sm font-semibold text-teal-700 overflow-hidden whitespace-nowrap">
-            <marquee behavior="scroll" direction="left">
-              <strong>FREE SHIPPING ON ALL ORDERS $65+</strong>
-            </marquee>
-          </div>
-
-          {/* Navbar mobile */}
-          <div
-            className=" text-white py-2 px-4 flex justify-between items-center"
-            style={{ backgroundColor: "rgb(18, 111, 134)" }}
-          >
-            <button onClick={toggleMenu} className="cursor-pointer">
-              <FaBars className="h-6 w-6" />
-            </button>
-            <img src="/logo.svg" className="h-8" alt="Logo" />
-            <div className="flex gap-3 items-center">
-              <FaSearch className="h-5 w-5" />
-              <FaUser className="h-5 w-5" />
-              <FaShoppingCart className="h-5 w-5" />
+          <div className="fixed top-0 left-0 w-full z-[999]">
+            {/* Navbar mobile */}
+            {/* Marquee banner */}
+            <div className="bg-orange-200 text-center py-2 text-sm font-semibold text-teal-700 overflow-hidden whitespace-nowrap">
+              <marquee behavior="scroll" direction="left">
+                <strong>FREE SHIPPING ON ALL ORDERS $65+</strong>
+              </marquee>
+            </div>
+            <div
+              className="text-white py-2 px-4 flex justify-between items-center"
+              style={{ backgroundColor: "rgb(18, 111, 134)" }}
+            >
+              <button onClick={toggleMenu} className="cursor-pointer">
+                <FaBars className="h-6 w-6" />
+              </button>
+              <img src="/logo.svg" className="h-8" alt="Logo" />
+              <div className="flex gap-3 items-center">
+                <FaSearch className="h-5 w-5" />
+                <FaUser className="h-5 w-5" />
+                <FaShoppingCart className="h-5 w-5" />
+              </div>
             </div>
           </div>
 
+          <div className="w-full z-[999]" />
+
           {/* Slide menu */}
           {isMenuOpen && (
-            <div className="mt-6 w-full h-full fixed left-0 top-[56px] z-[9999] flex">
+            <div className="mt-6 w-full h-full fixed left-0 top-[96px] z-[9999] flex">
               {/* Side menu */}
               <div
-                className="flex-1 h-full w-[80vw] px-4 text-white "
+                className="flex-1 h-full w-[80vw] px-4 text-white"
                 style={{ backgroundColor: "#006b7f" }}
               >
                 <div className="text-xl flex flex-col py-4">

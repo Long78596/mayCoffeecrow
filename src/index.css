@@ -1,2 +1,6 @@
 @import "tailwindcss";
+.stroke-text {
+  -webkit-text-stroke: 1px #065e6c; /* Màu viền xanh đậm */
+  color: #c5ecf6; /* Màu chữ nhạt */
+}
 
