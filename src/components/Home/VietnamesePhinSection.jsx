@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import {Link} from "react-router-dom";
 
 const slides = [
   {
@@ -72,7 +73,7 @@ export const  VietnamesePhinSection = ()=> {
 
         {/* Button */}
         <div className="flex justify-center mt-6">
-          <Link to="/collections/brew-tools">
+          <Link to="#">
             <button className="bg-[#0a7485] text-white rounded-full px-4 lg:px-12 py-2 font-medium uppercase text-sm hover:brightness-125">
               Get your phin filter
             </button>

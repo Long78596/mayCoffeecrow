@@ -11,6 +11,7 @@ import { DirectTrade } from "../components/Home/DirectTrade";
 import { CustomerReviews } from "../components/Home/CustomerReviews";
 import { RobustaBenefits } from "../components/Home/RobustaBenefits";
 import { VietnamesePhinSection } from "../components/Home/VietnamesePhinSection";
+import { News } from "../components/Home/News";
 const Home = () => {
   return (
     <>
@@ -27,6 +28,7 @@ const Home = () => {
       <CustomerReviews />
       <RobustaBenefits />
       <VietnamesePhinSection />
+      <News />
     </>
   );
 };
