@@ -7,10 +7,10 @@ export const HeroSection = () => {
           <p className="font-bold  md:text-xl lg:text-xl text-[#0a7485]">
             🔥 STRONG. BOLD. SMOOTH. 🔥
           </p>
-          <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0a7485]">
+          <p className="text-3xl md:text-title lg:text-5xl font-bold text-[#0a7485]">
             <strong>Supercharged with Natural Caffeine Iced Coffee</strong>
           </p>
-          <p className="text-base md:text-xl lg:text-2xl text-[#0a7485]">
+          <p className="text-base md:text-body lg:text-submenu text-[#0a7485]">
             Powered by premium Vietnamese Robusta beans,
             <span className="font-bold">
               {" "}
@@ -19,7 +19,7 @@ export const HeroSection = () => {
             . Smooth, rich, and crafted to fuel your hustle, this is no ordinary
             pick-me-up.
           </p>
-          <p className="text-base md:text-xl lg:text-2xl text-[#0a7485]">
+          <p className="text-base md:text-body lg:text-submenu text-[#0a7485]">
             Why settle for three when one does it all? Save money, boost your
             energy, and crush your day.
           </p>

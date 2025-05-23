@@ -5,6 +5,12 @@ import { WelcomeCoffeeSection } from "../components/Home/WelcomeToCoffeeSection"
 import { CoffeeStorySection } from "../components/Home/CoffeeStorySection";
 import  MapSection  from "../components/Home/MapSection";
 import { WhyUs } from "../components/Home/WhyUs";
+import {YourselfSection} from  "../components/Home/YourselfSection";
+import { BestSellersSection } from "../components/Home/BestSellersSection";
+import { DirectTrade } from "../components/Home/DirectTrade";
+import { CustomerReviews } from "../components/Home/CustomerReviews";
+import { RobustaBenefits } from "../components/Home/RobustaBenefits";
+import { VietnamesePhinSection } from "../components/Home/VietnamesePhinSection";
 const Home = () => {
   return (
     <>
@@ -15,6 +21,12 @@ const Home = () => {
       <CoffeeStorySection />
       <MapSection />
       <WhyUs />
+      <YourselfSection />
+      <BestSellersSection />
+      <DirectTrade />
+      <CustomerReviews />
+      <RobustaBenefits />
+      <VietnamesePhinSection />
     </>
   );
 };

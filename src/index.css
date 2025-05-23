@@ -4,3 +4,34 @@
   color: #c5ecf6; /* Màu chữ nhạt */
 }
 
+.text-submenu {
+  font-size: 18px; 
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.text-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.text-body {
+  font-size: 16px;
+  font-weight: 400;
+}
+.swiper-container {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.swiper-wrapper {
+  display: flex;
+  
+  gap: 1rem; /* khoảng cách giữa các slide */
+}
+
+.swiper-slide {
+  width: 280px; /* hoặc auto nếu muốn */
+  flex-shrink: 0;
+}
+

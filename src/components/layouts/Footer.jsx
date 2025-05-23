@@ -91,7 +91,7 @@ export const Footer = () => {
           </div>
         </div>
       </section>
-      <section class="mt-10">
+      <section className="mt-10">
         <div className="container mx-auto flex flex-col-reverse lg:flex-row gap-10 lg:gap-20">
           <div className="w-[300px]  mx-auto space-x-1.5 lg:mx-0 flex flex-col items-center">
             <img
@@ -126,7 +126,7 @@ export const Footer = () => {
                 <FaYoutube className="text-white text-2xl" />
               </Link>
             </div>
-            <p class=" mt-2 text-center pt-1 text-2xl">
+            <p className=" mt-2 text-center pt-1 text-2xl">
               © 2025 May Coffee Crew
             </p>
           </div>
@@ -137,20 +137,20 @@ export const Footer = () => {
               return (
                 <div
                   key={idx}
-                  className="border-b-[2px] md:border-b-0 border-primary py-2 md:py-0 w-full"
+                  className="border-b-[2px] md:border-b-0 border-[#044a54] py-2 md:py-0 w-full"
                 >
                   <button
                     onClick={() => toggle(idx)}
                     className="w-full flex items-center justify-between md:cursor-default"
                   >
-                    <span className="text-[#044a54] text-4xl font-bold text-left">
+                    <span className="text-[#065e6c] text-title font-bold text-left">
                       {data.title}
                     </span>
 
                     <span
                       className={`md:hidden  ${isOpen ? "rotate-180" : ""}`}
                     >
-                      <FaChevronDown className="text-primary text-xs" />
+                      <FaChevronDown className="text-[#065e6c] text-xs" />
                     </span>
                   </button>
 
