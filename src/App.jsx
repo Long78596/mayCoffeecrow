@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Collections from "./pages/Collections";
+import { Collections } from "./pages/Collections";
 import ProductDetail from "./pages/ProductDetail";
 import Wholesale from "./pages/Wholesale";
 import BlogGuide from "./pages/BlogGuide";
@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/Collections" element={<Collections />} />
+          <Route path="/collections" element={<Collections />} />
           <Route path="/products/buffalo" element={<ProductDetail />} />
           <Route path="/pages/wholesale" element={<Wholesale />} />
           <Route path="/blogs/brew-guide" element={<BlogGuide />} />
