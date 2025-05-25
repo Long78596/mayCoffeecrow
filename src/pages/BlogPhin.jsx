@@ -1,4 +1,8 @@
+import {BlogPhins} from "../components/BlogPhins/BlogPhins"
+
 const BlogPhin = () => {
-  return <></>;
+  return <>
+   <BlogPhins />
+  </>;
 };
 export default BlogPhin;

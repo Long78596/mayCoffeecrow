@@ -1,4 +1,8 @@
+import {Wholesales} from "../components/Wholesale/wholesales"
+
 const Wholesale = () => {
-  return <></>;
+  return <>
+    <Wholesales />
+  </>;
 };
 export default Wholesale;

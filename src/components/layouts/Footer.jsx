@@ -85,7 +85,7 @@ export const Footer = () => {
             <img
               loading="eager"
               className="w-[80%]"
-              src="./footer/3mascot.webp"
+              src="https://cdn.shopify.com/s/files/1/0611/1956/1867/files/3mascot.webp?v=1699621517"
               alt=""
             />
           </div>
@@ -95,7 +95,7 @@ export const Footer = () => {
         <div className="container mx-auto flex flex-col-reverse lg:flex-row gap-10 lg:gap-20">
           <div className="w-[300px]  mx-auto space-x-1.5 lg:mx-0 flex flex-col items-center">
             <img
-              src="./footer/footer.svg"
+              src="https://maycoffeecrew.co.nz/cdn/shop/files/logo.svg?v=1699640189&width=500"
               alt=" May coffer crew"
               className="w-[70%] mx-auto lg:w-full"
             />
