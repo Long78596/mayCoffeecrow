@@ -3,18 +3,16 @@ import { Link } from "react-router-dom";
 export const HightSection = () => {
   return (
     <section className="mt-5">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 md:px-6 lg:px-0">
         <div className="bg-[#f2f195] rounded-xl flex flex-col lg:flex-row lg:pr-0">
-          <div className="w-full lg:w-1/2 m-1 lg:m-10 text-[#0a7485] flex-col space-y-3 md:space-y-6 lg:pr-0 text-base rounded-xl container-content text-center lg:text-left pb-5 lg:pb-10">
-            <p className="font-bold text-sm md:text-xl">
-              NEW ZEALAND'S FIRST SPECIALTY
-              <br />
-              VIETNAMESE COFFEE BRAND
+          <div className="w-full lg:px-10 lg:py-10  px-6 py-6 lg:w-1/2 m-1 lg:m-10 text-[#0a7485] flex-col space-y-3 md:space-y-6 lg:pr-0 text-base rounded-xl container-content text-center lg:text-left pb-5 lg:pb-10">
+            <p className="font-bold lg:text-4xl sm:text-[19px]">
+              NEW ZEALAND'S FIRST SPECIALTY VIETNAMESE COFFEE BRAND
             </p>
-            <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold leading-snug">
+            <h2 className="text-4xl md:text-4xl lg:text-5xl font-bold ">
               <strong>SO GOOD WE HAD TO SHARE</strong>
             </h2>
-            <p className="text-base md:text-lg lg:text-xl leading-relaxed">
+            <p className="text-xl md:text-lg lg:text-xl leading-relaxed">
               Uncensored Vietnamese flavours, a traditional taste with a modern
               touch. Premium beans sourced directly from Vietnamese farms and
               small batch roasted in Aotearoa.
@@ -55,7 +53,7 @@ export const HightSection = () => {
                     loading="lazy"
                   />
                   <p className="text-center font-bold uppercase text-[10px] md:text-xs lg:text-sm">
-                    {item.text}
+                    <strong>{item.text}</strong>
                   </p>
                 </div>
               ))}

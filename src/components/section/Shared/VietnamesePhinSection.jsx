@@ -23,7 +23,7 @@ const slides = [
 export const  VietnamesePhinSection = ()=> {
   return (
     <section>
-      <div className="container mx-auto mt-10 lg:mt-20 px-4">
+      <div className="container mx-auto mt-10 lg:mt-20  px-4 md:px-6 lg:px-0">
         <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-8 max-w-[913px] mx-auto">
           <img
             className="w-[90px] lg:w-[128px]"
@@ -32,9 +32,9 @@ export const  VietnamesePhinSection = ()=> {
           />
 
           <div className="flex flex-col justify-between text-center lg:text-left">
-            <p className="text-4xl lg:text-title font-bold uppercase text-[#0a7485]">
+            <p className="text-2xl lg:text-title font-bold uppercase text-[#0a7485]">
               LEARN A NEW BREWING METHOD,
-              <br />
+            
               EXPERIMENT WITH THE VIETNAMESE PHIN FILTER
             </p>
             <p className="text-[#0a7485] text-body mt-4 lg:mt-0">
@@ -81,6 +81,5 @@ export const  VietnamesePhinSection = ()=> {
         </div>
       </div>
     </section>
-  
   );
 }

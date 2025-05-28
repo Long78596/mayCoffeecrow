@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 export const CoffeeStorySection=()=>{
     return (
       <section>
-        <div className="container mx-auto text-[#28707b] my-10 lg:my-20">
+        <div className="container mx-auto text-[#28707b] px-4 md:px-6 lg:px-0 mt-10">
           <div className="border border-[#1e5057] rounded-xl  m-2 overflow-hidden">
             <div className="container-content pb-0 px-4 md:px-12">
-              <p className="text-4xl lg:text-6xl font-anton text-[#09464f] uppercase">
+              <p className="text-4xl lg:text-6xl font-anton text-[#09464f] uppercase mt-4">
                 <strong>Did you Know?</strong>
               </p>
               <p className="py-3 lg:py-6 text-xl lg:text-2xl leading-relaxed">

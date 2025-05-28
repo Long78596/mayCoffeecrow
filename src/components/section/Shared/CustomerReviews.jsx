@@ -50,7 +50,7 @@ const ReviewCard = ({ title, content, name, date, avatar }) => (
 export const CustomerReviews = () => {
   return (
     <section
-      className=" container mx-auto  lg:py-50 py-15  px-4 md:px-12 bg-cover bg-top md:bg-contain bg-no-repeat "
+      className=" container mx-auto px-4 md:px-6 lg:px-0 lg:py-50 py-15   bg-cover bg-top md:bg-contain bg-no-repeat "
       style={{
         backgroundImage:
           "url('https://cdn.shopify.com/s/files/1/0611/1956/1867/files/peoplesay_bg.svg?v=1699151935')",

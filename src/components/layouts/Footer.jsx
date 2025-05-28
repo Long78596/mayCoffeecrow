@@ -103,30 +103,30 @@ export const Footer = () => {
             <div className="flex space-y-2 mt-5 items-center gap-5 justify-center">
               <Link
                 to="#"
-                className="flex justify-center items-center w-10 h-10 bg-[#065e6c] rounded-full"
+                className="flex justify-center items-center w-6 h-6 bg-[#065e6c] rounded-full"
               >
-                <FaFacebookF className="text-white text-2xl" />
+                <FaFacebookF className="text-white text-xl m-1 text-center" />
               </Link>
               <Link
                 to="#"
-                className="flex justify-center items-center w-10 h-10 bg-[#065e6c] rounded-full"
+                className="flex justify-center items-center w-6 h-6 bg-[#065e6c] rounded-full"
               >
-                <FaInstagram className="text-white text-2xl" />
+                <FaInstagram className="text-white text-xl m-1 text-center" />
               </Link>
               <Link
                 to="#"
-                className="flex justify-center items-center w-10 h-10 bg-[#065e6c] rounded-full"
+                className="flex justify-center items-center w-6 h-6 bg-[#065e6c] rounded-full"
               >
-                <FaTiktok className="text-white text-2xl" />
+                <FaTiktok className="text-white text-xl m-1 text-center" />
               </Link>
               <Link
                 to="#"
-                className="flex justify-center items-center w-10 h-10 bg-[#065e6c] rounded-full"
+                className="flex justify-center items-center w-6 h-6 bg-[#065e6c] rounded-full"
               >
-                <FaYoutube className="text-white text-2xl" />
+                <FaYoutube className="text-white text-xl m-1 text-center " />
               </Link>
             </div>
-            <p className=" mt-2 text-center pt-1 text-2xl">
+            <p className=" mt-2 text-center pt-1 text-xl text-[#065e6c]">
               © 2025 May Coffee Crew
             </p>
           </div>
@@ -143,7 +143,7 @@ export const Footer = () => {
                     onClick={() => toggle(idx)}
                     className="w-full flex items-center justify-between md:cursor-default"
                   >
-                    <span className="text-[#065e6c] text-title font-bold text-left">
+                    <span className="text-[#065e6c] text-xl font-bold text-left">
                       {data.title}
                     </span>
 
@@ -163,7 +163,7 @@ export const Footer = () => {
                       <li key={i}>
                         <Link
                           to={link.to}
-                          className="text-teal-800 text-2xl block py-1"
+                          className="text-teal-800 text-xl block py-1"
                         >
                           {link.label}
                         </Link>

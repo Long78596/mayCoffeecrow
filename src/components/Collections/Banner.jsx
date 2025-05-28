@@ -23,7 +23,7 @@ const slides = [
 export const Banner = () => {
   return (
     <section class="w-full bg-[#caf3ff]">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4 md:px-6 lg:px-0">
         <p className="text-title font-bold uppercase text-[#0a7485]">
           SHOP BY CATEGORY
         </p>

@@ -39,7 +39,7 @@ export const   RobustaBenefits = () => {
   return (
     <section className="container mx-auto  ">
       <div className="text-[#0a7485] text-center px-4 py-8">
-        <h2 className="text-title md:text-submenu uppercase font-bold mb-8">
+        <h2 className="lg:text-title md:text-submenu text-xl uppercase font-bold mb-8">
           Elevate the familiar flavour with our premium Robusta beans
         </h2>
         <div className="flex flex-wrap gap-4 justify-center xl:justify-between">

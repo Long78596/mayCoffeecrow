@@ -43,7 +43,7 @@ const faqData = [
 const MapSection = () => {
   return (
     <section>
-      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 text-[#28707b]">
+      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 text-[#28707b] px-4 md:px-6 lg:px-0 mt-10">
         {/* Left Image */}
         <img
           src="//maycoffeecrew.co.nz/cdn/shop/files/earth.webp?v=1699619568&amp;width=1000"

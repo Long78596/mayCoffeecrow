@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 export const ListProduct=()=>{
     return (
       <>
-        <section class="container mx-auto">
+        <section class="container mx-auto px-4 md:px-6 lg:px-0 mt-10">
           <div className="flex flex-col space-y-10 px-4 sm:px-6 lg:px-8 max-w-screen-xl mx-auto">
             <div>
               <div className="flex justify-between lg:items-center flex-col md:flex-row gap-2 lg:gap-4">
@@ -23,10 +23,10 @@ export const ListProduct=()=>{
             <div className="grid  grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
               {[...Array(4)].map((_, index) => (
                 <div key={index} className="flex flex-col  relative h-full">
-                  <div className="absolute top-2 left-1/2 -translate-x-1/2 text-sm text-white  text-center px-2 uppercase rounded  bg-[#218c74] z-10">
+                  <div className="absolute top-2 left-1/2 -translate-x-1/2 lg:text-sm text-white text-[10px]  text-center px-2 uppercase rounded  bg-[#218c74] z-10">
                     OUR STRONGEST
                   </div>
-                  <Link to="#" className="mt-1 lg:mt-2">
+                  <Link to="#" className="mt-2 lg:mt-3">
                     <div className="bg-neutral-50 flex justify-center py-2 rounded mt-4">
                       <div
                         className="h-[124px] md:h-[180px] w-full bg-center bg-contain bg-no-repeat"
@@ -88,11 +88,11 @@ export const ListProduct=()=>{
             <div className="grid  grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
               {[...Array(4)].map((_, index) => (
                 <div key={index} className="flex flex-col  relative h-full">
-                  <div className="absolute top-2 left-1/2 -translate-x-1/2 text-sm text-white  text-center px-2 uppercase rounded  bg-[#218c74] z-10">
+                  <div className="absolute text-center top-2 left-1/2 -translate-x-1/2 lg:text-sm text-white   text-[8px]  px-2 uppercase rounded  bg-[#218c74] ">
                     OUR STRONGEST
                   </div>
-                  <Link to="#" className="mt-1 lg:mt-2">
-                    <div className="bg-neutral-50 flex justify-center py-2 rounded mt-4">
+                  <Link to="#" className="mt-2 lg:mt-3">
+                    <div className="bg-neutral-50 flex justify-center py-2 rounded mt-2">
                       <div
                         className="h-[124px] md:h-[180px] w-full bg-center bg-contain bg-no-repeat"
                         style={{
@@ -114,7 +114,7 @@ export const ListProduct=()=>{
                           Traditional Vietnamese Coffee MUST TRY
                         </p>
                       </div>
-                      <div className="text-xs text-[#0a7485] text-left mt-1">
+                      <div className="text-sm text-[#0a7485] text-left mt-1">
                         100% pure robusta, Buffalo is a bold, powerful yet
                         smooth, clean coffee that effortlessly complements milk.
                         Giving you that double shot of caffeine without breaking

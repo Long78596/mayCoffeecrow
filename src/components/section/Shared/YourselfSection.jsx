@@ -1,6 +1,6 @@
 export  const YourselfSection =()=>{
      return (
-       <section className=" mt-3 lg:mt-4 container mx-auto">
+       <section className=" mt-3 lg:mt-4 container mx-auto px-4 md:px-6 lg:px-0">
          <div className="flex  flex-col lg:flex-row items-center justify-center text-center gap-10 lg:px-14">
            <img
              className="w-24 lg:w-34 lg:h-54"

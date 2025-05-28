@@ -43,7 +43,7 @@ const features = [
 
 export const Wholesales = () => {
   return (
-    <div className="w-full px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto text-[#0a7485]">
+    <div className="w-full px-4 md:px-6 lg:px-0 max-w-3xl mx-auto text-[#0a7485]">
       <p className="text-2xl sm:text-3xl lg:text-4xl font-anton text-center uppercase text-[#0a7485]">
         <strong> WHOLESALE</strong>
       </p>

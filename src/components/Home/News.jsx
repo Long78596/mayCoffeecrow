@@ -25,7 +25,7 @@ const slides = [
 ];
 export const News = () => {
   return (
-    <section className="container mx-auto mt-10 lg:mt-20">
+    <section className="container mx-auto mt-10 lg:mt-20 px-4 md:px-6 lg:px-0">
       <p className="text-[#28707b] text-4xl text-bold uppercase text-center justify-center hover:underline">
         <strong> READ OUR LATEST NEWS</strong>
       </p>

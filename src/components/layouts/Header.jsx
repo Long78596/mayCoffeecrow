@@ -57,7 +57,7 @@ export const Header = () => {
 
         {/* === giao diện desktop cố định === */}
         <div className="hidden md:block">
-          <div className="bg-orange-200 text-center py-2 text-sm font-semibold text-teal-700 fixed top-0 left-0 w-full z-[999]">
+          <div className="bg-orange-200  lg:items-center text-center py-2 text-sm font-semibold text-teal-700 fixed top-0 left-0 w-full z-[999]">
             <p>
               <strong>FREE SHIPPING ON ALL ORDERS $65+</strong>
             </p>

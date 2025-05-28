@@ -2,7 +2,7 @@ import React from "react";
 
 export const BlogPhins = ({ steps = [] }) => {
   return (
-    <div className="container-auto lg:max-w-[1024px] px-4 mx-auto">
+    <div className="container-auto lg:max-w-[1024px] px-4 md:px-6 lg:px-0 mx-auto">
       <div className="flex flex-col space-y-4 items-center justify-center text-center">
         <span className="uppercase text-h2 font-anton">
           Vietnamese Phin Filter

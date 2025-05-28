@@ -1,7 +1,7 @@
 export const BlogGuide=()=>{
     return (
       <>
-        <div className="container mx-auto w-full px-4 sm:px-6 lg:px-8 text-[#0a7485]">
+        <div className="container mx-auto w-full px-4 md:px-6 lg:px-0 text-[#0a7485]">
           <div className="flex flex-col md:flex-row items-center gap-6 px-4 sm:px-6 lg:px-12 py-10 max-w-screen-xl mx-auto">
             <img
               loading="eager"

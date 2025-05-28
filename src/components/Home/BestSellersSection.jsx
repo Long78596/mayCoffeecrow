@@ -48,7 +48,7 @@ const products = [
   
 export const BestSellersSection = () => {
   return (
-    <section className="container mx-auto py-10 lg:py-20 text-[#0a7485]">
+    <section className="container mx-auto py-10 lg:py-20 text-[#0a7485] px-4 md:px-6 lg:px-0">
       <div className="flex justify-between items-center flex-col md:flex-row gap-5">
         <span className="text-title font-bold uppercase">
           MEET OUR BESTSELLERS
@@ -91,9 +91,7 @@ export const BestSellersSection = () => {
                 <p className="text-neutral-500 text-xs uppercase">
                   {item.description}
                 </p>
-                <p className="text-body mt-2">
-                 {item.details}
-                </p>
+                <p className="text-body mt-2">{item.details}</p>
                 <Link to="#" className="mt-4">
                   <button className="bg-[#0a7485] text-white rounded-full px-6 py-2 font-medium uppercase text-sm cursor-pointer hover:brightness-125">
                     Shop now

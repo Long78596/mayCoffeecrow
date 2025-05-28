@@ -28,7 +28,7 @@ export const StorySection = () => {
               alt=""
             />
             <div className="mt-32">
-              <p className="pr-[5%] leading-relaxed text-base text-[#0a7485]">
+              <p className="pr-[5%] leading-relaxed  text-[#0a7485] text-xl">
                 As the first specialty Vietnamese coffee brand from New Zealand,
                 <br />
                 May Coffee Crew takes pride in showcasing the diversity of
@@ -39,7 +39,7 @@ export const StorySection = () => {
                 <br />
                 in Vietnam and we're a Kiwi-Vietnamese family-owned company too.
               </p>
-              <p className="mt-4 pr-[30%] leading-relaxed text-base text-[#0a7485]">
+              <p className="mt-4 pr-[30%] leading-relaxed text-xl text-[#0a7485]">
                 We are challenging misconceptions about
                 <br />
                 Vietnamese coffee and the robusta bean,
@@ -87,14 +87,14 @@ export const StorySection = () => {
             alt=""
           />
 
-          <p className="text-sm leading-relaxed text-[#0a7485]">
+          <p className="text-xl leading-relaxed text-[#0a7485]">
             As the first specialty Vietnamese coffee brand from New Zealand, May
             Coffee Crew takes pride in showcasing the diversity of coffee
             origins and the array of flavours that both robusta and arabica
             beans offer. We import through direct-trade with farmers in Vietnam
             and we're a Kiwi-Vietnamese family-owned company too.
           </p>
-          <p className="text-sm leading-relaxed text-[#0a7485]">
+          <p className="text-xl leading-relaxed text-[#0a7485]">
             We are challenging misconceptions about Vietnamese coffee and the
             robusta bean, highlighting robusta's vital role in mitigating
             coffee's climate challenges. Join us on this journey to reshape
@@ -102,7 +102,7 @@ export const StorySection = () => {
           </p>
           <div className="flex justify-center lg:justify-start">
             <a href="https://maycoffeecrew.co.nz/pages/about-our-story">
-              <button className="bg-[#204f56] text-white rounded-full px-4 lg:px-12 py-2 font-medium uppercase text-sm whitespace-nowrap hover:brightness-125">
+              <button className="bg-[#204f56] text-white rounded-full px-4 lg:px-12 py-2 font-medium uppercase text-xl whitespace-nowrap hover:brightness-125">
                 Our story
               </button>
             </a>

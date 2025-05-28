@@ -25,9 +25,9 @@ const whyUsData = [
 
 export const WhyUs = () => {
   return (
-    <section className="container mt-4 mx-auto rounded-xl md:py-4 lg:py-6">
+    <section className="container mt-10 mx-auto rounded-xl md:py-4 lg:py-6 px-4 md:px-6 lg:px-0 ">
       <div className="bg-[#fff0f0] mt-10 m-2 md:border">
-        <p className="text-center text-4xl font-bold lg:py-10 md:py-5 text-[#28707b] uppercase">
+        <p className="text-center text-4xl font-bold lg:py-10 md:py-5 text-[#28707b] uppercase mt-10">
           <strong>WHY US</strong>
         </p>
         <div className=" px-6 py-6 lg:mt-6 flex flex-wrap justify-evenly lg:justify-between">

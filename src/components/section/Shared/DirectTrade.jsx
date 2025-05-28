@@ -38,7 +38,7 @@ export const DirectTrade = () => {
   ];
 
   return (
-    <section className="container mx-auto text-[#0a7485]">
+    <section className="container mx-auto text-[#0a7485] px-4 md:px-6 lg:px-0">
       <div className="max-w-[1080px] mx-auto text-center m-2">
         <p className="font-bold text-title uppercase lg:px-8">
           WHAT DOES "DIRECT TRADE" COFFEE MEAN WITH MAY COFFEE CREW
