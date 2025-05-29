@@ -53,10 +53,10 @@ export const Header = () => {
     <>
       <header className="w-full">
         {/* === giao diện desktop === */}
-        <div className=" hidden md:block"></div>
+        <div className="h-[96px] hidden md:block"></div>
 
         {/* === giao diện desktop cố định === */}
-        <div className="hidden md:block ">
+        <div className="hidden md:block">
           <div className="bg-orange-200  lg:items-center text-center py-2 text-sm font-semibold text-teal-700 fixed top-0 left-0 w-full z-[999]">
             <p>
               <strong>FREE SHIPPING ON ALL ORDERS $65+</strong>
@@ -64,7 +64,7 @@ export const Header = () => {
           </div>
 
           <div
-            className="fixed top-[32px] left-0 w-full z-[999] text-white "
+            className="fixed top-[32px] left-0 w-full z-[999] text-white py-2"
             style={{ backgroundColor: "rgb(18, 111, 134)" }}
           >
             <div className="container mx-auto px-4 flex justify-between items-center">
@@ -179,119 +179,118 @@ export const Header = () => {
 
         {/* === giao diện trên MOBILE  === */}
         <div className="block md:hidden">
-          <div className="px-4 md:px-6 lg:px-0">
-            <div className="fixed top-0 left-0 w-full z-[999]">
-              {/* Navbar mobile */}
-              {/* Marquee banner */}
-              <div className="relative overflow-hidden bg-orange-200 text-teal-700 text-sm font-semibold">
-                <div className="animate-marquee whitespace-nowrap py-1">
-                  <strong>FREE SHIPPING ON ALL ORDERS $65+ </strong>
-                </div>
-              </div>
-
-              <div
-                className="text-white  px-4 flex justify-between items-center"
-                style={{ backgroundColor: "rgb(18, 111, 134)" }}
-              >
-                <button onClick={toggleMenu} className="cursor-pointer">
-                  <FaBars className="h-6 w-6" />
-                </button>
-                <img src="/logo.svg" className="h-8" alt="Logo" />
-                <div className="flex gap-3 items-center">
-                  <FaSearch className="h-5 w-5" />
-                  <FaUser className="h-5 w-5" />
-                  <Link to="/cart">
-                    <FaShoppingCart className="h-5 w-5" />
-                  </Link>
-                </div>
+          <div className="fixed top-0 left-0 w-full z-[999]">
+            {/* Navbar mobile */}
+            {/* Marquee banner */}
+            <div className="bg-orange-200 text-center py-3 text-sm font-semibold text-teal-700 overflow-hidden whitespace-nowrap">
+              <marquee behavior="scroll" direction="left">
+                <strong className="animate-marquee">
+                  FREE SHIPPING ON ALL ORDERS $65+
+                </strong>
+              </marquee>
+            </div>
+            <div
+              className="text-white py-2 px-4 flex justify-between items-center"
+              style={{ backgroundColor: "rgb(18, 111, 134)" }}
+            >
+              <button onClick={toggleMenu} className="cursor-pointer">
+                <FaBars className="h-6 w-6" />
+              </button>
+              <img src="/logo.svg" className="h-8" alt="Logo" />
+              <div className="flex gap-3 items-center">
+                <FaSearch className="h-5 w-5" />
+                <FaUser className="h-5 w-5" />
+                <Link to="/cart">
+                  <FaShoppingCart className="h-5 w-5" />
+                </Link>
               </div>
             </div>
+          </div>
 
-            <div className="w-full z-[999]" />
+          <div className="w-full z-[999]" />
 
-            {/* Slide menu */}
-            {isMenuOpen && (
-              <div className=" w-full h-full fixed left-0 top-[54px] z-[9999] flex">
-                {/* Side menu */}
-                <div
-                  className="flex-1 h-full w-[80vw] px-4 text-white"
-                  style={{ backgroundColor: "#006b7f" }}
-                >
-                  <div className="text-xl flex flex-col py-4">
-                    {/* SHOP */}
-                    <div
-                      className="border-b border-white py-2 flex justify-between items-center cursor-pointer"
-                      onClick={() => setOpen(!open)}
-                    >
-                      <span className="uppercase font-semibold text-white">
-                        Shop
-                      </span>
-                      <FaChevronRight
-                        className={`text-sm text-white transition-transform duration-300 ${
-                          open ? "rotate-90" : ""
-                        }`}
-                      />
-                    </div>
+          {/* Slide menu */}
+          {isMenuOpen && (
+            <div className=" w-full h-full fixed left-0 top-[96px] z-[9999] flex">
+              {/* Side menu */}
+              <div
+                className="flex-1 h-full w-[80vw] px-4 text-white"
+                style={{ backgroundColor: "#006b7f" }}
+              >
+                <div className="text-xl flex flex-col py-4">
+                  {/* SHOP */}
+                  <div
+                    className="border-b border-white py-2 flex justify-between items-center cursor-pointer"
+                    onClick={() => setOpen(!open)}
+                  >
+                    <span className="uppercase font-semibold text-white">
+                      Shop
+                    </span>
+                    <FaChevronRight
+                      className={`text-sm text-white transition-transform duration-300 ${
+                        open ? "rotate-90" : ""
+                      }`}
+                    />
+                  </div>
 
-                    {/* Dropdown content */}
-                    {open && (
-                      <ul className="pl-4 text-lg text-white transition-all duration-300 my-2">
-                        <li className="py-2 border-b border-white uppercase">
-                          <Link to="/collections">Shop all</Link>
-                        </li>
-                        <li className="py-2 border-b border-white uppercase">
-                          <Link to="/collections">Coffee</Link>
-                        </li>
-                        <li className="py-2 border-b border-white uppercase">
-                          <Link to="/collections">Brew tools</Link>
-                        </li>
-                        <li className="py-2 border-b border-white uppercase">
-                          <Link to="/collections">Bundles</Link>
-                        </li>
-                      </ul>
-                    )}
+                  {/* Dropdown content */}
+                  {open && (
+                    <ul className="pl-4 text-lg text-white transition-all duration-300 my-2">
+                      <li className="py-2 border-b border-white uppercase">
+                        <Link to="/collections">Shop all</Link>
+                      </li>
+                      <li className="py-2 border-b border-white uppercase">
+                        <Link to="/collections">Coffee</Link>
+                      </li>
+                      <li className="py-2 border-b border-white uppercase">
+                        <Link to="/collections">Brew tools</Link>
+                      </li>
+                      <li className="py-2 border-b border-white uppercase">
+                        <Link to="/collections">Bundles</Link>
+                      </li>
+                    </ul>
+                  )}
 
-                    {/* WHOLESALE */}
-                    <Link
-                      to="/pages/wholesale"
-                      className="uppercase border-b border-white py-2 font-semibold"
-                    >
-                      Wholesale
+                  {/* WHOLESALE */}
+                  <Link
+                    to="/pages/wholesale"
+                    className="uppercase border-b border-white py-2 font-semibold"
+                  >
+                    Wholesale
+                  </Link>
+
+                  {/* ABOUT */}
+                  <div className="border-b border-white py-2 font-semibold uppercase">
+                    About
+                  </div>
+
+                  {/* STOCKISTS */}
+                  <div className="border-b border-white py-2 font-semibold uppercase">
+                    Stockists
+                  </div>
+
+                  {/* Bottom links */}
+                  <div className="grid grid-cols-1 mt-10 gap-2 text-base">
+                    <Link to="/collections" onClick={closeMenu}>
+                      Shop
                     </Link>
-
-                    {/* ABOUT */}
-                    <div className="border-b border-white py-2 font-semibold uppercase">
-                      About
-                    </div>
-
-                    {/* STOCKISTS */}
-                    <div className="border-b border-white py-2 font-semibold uppercase">
-                      Stockists
-                    </div>
-
-                    {/* Bottom links */}
-                    <div className="grid grid-cols-1 mt-10 gap-2 text-base">
-                      <Link to="/collections" onClick={closeMenu}>
-                        Shop
-                      </Link>
-                      <Link to="/blogs/brew-guide" onClick={closeMenu}>
-                        Sustainability
-                      </Link>
-                      <Link to="#" onClick={closeMenu}>
-                        About Us
-                      </Link>
-                      <Link to="/" onClick={closeMenu}>
-                        Our coffee
-                      </Link>
-                    </div>
+                    <Link to="/blogs/brew-guide" onClick={closeMenu}>
+                      Sustainability
+                    </Link>
+                    <Link to="#" onClick={closeMenu}>
+                      About Us
+                    </Link>
+                    <Link to="/" onClick={closeMenu}>
+                      Our coffee
+                    </Link>
                   </div>
                 </div>
-
-                {/* Overlay click to close */}
-                <div className="flex-1 bg-black/80" onClick={closeMenu}></div>
               </div>
-            )}
-          </div>
+
+              {/* Overlay click to close */}
+              <div className="flex-1 bg-black/80" onClick={closeMenu}></div>
+            </div>
+          )}
         </div>
       </header>
     </>
