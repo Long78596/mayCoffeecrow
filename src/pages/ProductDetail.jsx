@@ -12,16 +12,12 @@ import { Detail } from "../components/ProductDetail/Detail";
 const ProductDetail = () => {
   return (
     <>
-
-    <Detail />
+      <Detail />
+      <BestSellersSection />
       <WhyUs />
       <YourselfSection />
-      <BestSellersSection />
-      <DirectTrade />
+
       <CustomerReviews />
-      <RobustaBenefits />
-      <VietnamesePhinSection />
-      <News />
     </>
   );
 };

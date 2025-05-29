@@ -6,6 +6,7 @@ import Wholesale from "./pages/Wholesale";
 import BlogGuides from "./pages/BlogGuides";
 import BlogPhin from "./pages/BlogPhin";
 import { MainLayout } from "./components/layouts/MainLayout";
+import { Cart } from "./pages/Cart";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/collections" element={<Collections />} />
           <Route path="/products/buffalo" element={<ProductDetail />} />
+          <Route path="/cart" element={<Cart />} />
           <Route path="/pages/wholesale" element={<Wholesale />} />
           <Route path="/blogs/brew-guide" element={<BlogGuides />} />
           <Route

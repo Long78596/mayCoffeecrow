@@ -55,7 +55,7 @@ export const BestSellersSection = () => {
         </span>
         <div className="flex items-center space-x-1">
           <Link
-            to="collections"
+            to="/collections"
             className="text-submenu font-medium whitespace-nowrap"
           >
             Shop ALL
@@ -74,7 +74,7 @@ export const BestSellersSection = () => {
               <div className="absolute top-2 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white text-xs py-1 px-2 uppercase rounded">
                 {item.tag}
               </div>
-              <Link to="#">
+              <Link to="/products/buffalo">
                 <div className="bg-neutral-50 flex justify-center py-2 rounded mt-4">
                   <div
                     className="h-40 w-full bg-center bg-contain bg-no-repeat"
@@ -85,14 +85,14 @@ export const BestSellersSection = () => {
                 </div>
               </Link>
               <div className="flex flex-col items-center text-center py-4">
-                <Link to="#">
+                <Link to="/products/buffalo">
                   <span className="font-bold text-sm">{item.name}</span>
                 </Link>
                 <p className="text-neutral-500 text-xs uppercase">
                   {item.description}
                 </p>
                 <p className="text-body mt-2">{item.details}</p>
-                <Link to="#" className="mt-4">
+                <Link to="/products/buffalo" className="mt-4">
                   <button className="bg-[#0a7485] text-white rounded-full px-6 py-2 font-medium uppercase text-sm cursor-pointer hover:brightness-125">
                     Shop now
                   </button>

@@ -27,7 +27,7 @@ export const Banner = () => {
         <p className="text-title font-bold uppercase text-[#0a7485]">
           SHOP BY CATEGORY
         </p>
-        <div className="mt-6 lg:mt-10 m-2 justify-center items-center ">
+        <div className="mt-6 lg:mt-10 m-2 justify-center items-center lg:py-10 py-6 ">
           <Swiper
             modules={[Navigation]}
             spaceBetween={40}
