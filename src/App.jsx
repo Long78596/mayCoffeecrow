@@ -7,6 +7,7 @@ import BlogGuides from "./pages/BlogGuides";
 import BlogPhin from "./pages/BlogPhin";
 import { MainLayout } from "./components/layouts/MainLayout";
 import { Cart } from "./pages/Cart";
+import { Login } from "./pages/Login";
 
 function App() {
   return (
@@ -24,9 +25,11 @@ function App() {
             element={<BlogPhin />}
           />
         </Route>
+        <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   );
 }
 
 export default App;
+

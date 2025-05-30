@@ -10,6 +10,7 @@ import {
   FaBars,
   FaChevronRight,
 } from "react-icons/fa";
+import { ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 
 import {useState} from "react";
@@ -53,18 +54,20 @@ export const Header = () => {
     <>
       <header className="w-full">
         {/* === giao diện desktop === */}
-        <div className="h-[96px] hidden md:block"></div>
+        <div className="  hidden md:block"></div>
 
         {/* === giao diện desktop cố định === */}
-        <div className="hidden md:block">
+        <div className="hidden md:block mt-0 md:mt-20 lg:mt-20">
           <div className="bg-orange-200  lg:items-center text-center py-2 text-sm font-semibold text-teal-700 fixed top-0 left-0 w-full z-[999]">
             <p>
-              <strong>FREE SHIPPING ON ALL ORDERS $65+</strong>
+              <strong>
+                FREE SHIPPING ON ALL CANS - No Minimum Spend Needed!
+              </strong>
             </p>
           </div>
 
           <div
-            className="fixed top-[32px] left-0 w-full z-[999] text-white py-2"
+            className="fixed top-[32px] left-0 w-full z-[999] text-white py-2 "
             style={{ backgroundColor: "rgb(18, 111, 134)" }}
           >
             <div className="container mx-auto px-4 flex justify-between items-center">
@@ -92,7 +95,10 @@ export const Header = () => {
                     onMouseLeave={() => setShowDropdown(false)}
                   >
                     <div className="cursor-pointer flex items-center gap-1">
-                      SHOP <span>▼</span>
+                      SHOP{" "}
+                      <span>
+                        <ChevronDown className="text-white" />
+                      </span>
                     </div>
 
                     {/* Mega Dropdown */}
@@ -163,7 +169,7 @@ export const Header = () => {
 
               {/* User Actions */}
               <div className="flex gap-3 items-center">
-                <Link to="#">
+                <Link to="/login">
                   <FaUser className="h-6 w-6" />
                 </Link>
                 <Link to="#">
@@ -182,10 +188,10 @@ export const Header = () => {
           <div className="fixed top-0 left-0 w-full z-[999]">
             {/* Navbar mobile */}
             {/* Marquee banner */}
-            <div className="bg-orange-200 text-center py-3 text-sm font-semibold text-teal-700 overflow-hidden whitespace-nowrap">
+            <div className="bg-orange-200 text-center py-2 text-sm font-semibold text-teal-700 overflow-hidden whitespace-nowrap">
               <marquee behavior="scroll" direction="left">
                 <strong className="animate-marquee">
-                  FREE SHIPPING ON ALL ORDERS $65+
+                  FREE SHIPPING ON ALL CANS - No Minimum Spend Needed!
                 </strong>
               </marquee>
             </div>
@@ -198,9 +204,13 @@ export const Header = () => {
               </button>
               <img src="/logo.svg" className="h-8" alt="Logo" />
               <div className="flex gap-3 items-center">
-                <FaSearch className="h-5 w-5" />
-                <FaUser className="h-5 w-5" />
-                <Link to="/cart">
+                <Link to="#" className="cursor-pointer">
+                  <FaSearch className="h-5 w-5" />
+                </Link>
+                <Link to="/login" className="cursor-pointer">
+                  <FaUser className="h-5 w-5" />
+                </Link>
+                <Link to="/cart" className="cursor-pointer">
                   <FaShoppingCart className="h-5 w-5" />
                 </Link>
               </div>
@@ -211,7 +221,7 @@ export const Header = () => {
 
           {/* Slide menu */}
           {isMenuOpen && (
-            <div className=" w-full h-full fixed left-0 top-[96px] z-[9999] flex">
+            <div className=" w-full h-full fixed left-0 top-[90px] z-[9999] flex">
               {/* Side menu */}
               <div
                 className="flex-1 h-full w-[80vw] px-4 text-white"
