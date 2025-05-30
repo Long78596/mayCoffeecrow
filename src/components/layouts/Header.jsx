@@ -278,9 +278,7 @@ export const Header = () => {
                   <div className="border-b border-white py-2 font-semibold uppercase">
                     <Link to="/blogs/brew-guide">Blog</Link>
                   </div>
-                  <div className="border-b border-white py-2 font-semibold uppercase">
-                    <Link to="/blogs/brew-guide">Blog</Link>
-                  </div>
+                 
 
                   {/* STOCKISTS */}
                   <div className="border-b border-white py-2 font-semibold uppercase">
