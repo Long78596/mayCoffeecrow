@@ -162,6 +162,9 @@ export const Header = () => {
                     <Link to="#">ABOUT</Link>
                   </li>
                   <li>
+                    <Link to="/blogs/brew-guide">BLOG</Link>
+                  </li>
+                  <li>
                     <Link to="#">STOCKISTS</Link>
                   </li>
                 </ul>
@@ -278,7 +281,6 @@ export const Header = () => {
                   <div className="border-b border-white py-2 font-semibold uppercase">
                     <Link to="/blogs/brew-guide">Blog</Link>
                   </div>
-                 
 
                   {/* STOCKISTS */}
                   <div className="border-b border-white py-2 font-semibold uppercase">
