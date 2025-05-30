@@ -104,7 +104,7 @@ export const ProductCarousel = () => {
             >
               <Link to={product.url}>
                 <div
-                  className="h-[115px] w-[85px] bg-contain bg-center bg-no-repeat"
+                  className="h-[115px] w-[125px] bg-contain bg-center bg-no-repeat"
                   style={{ backgroundImage: `url('${product.image}')` }}
                 />
               </Link>

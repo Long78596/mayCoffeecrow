@@ -1,3 +1,5 @@
+import { Link } from "lucide-react";
+
 export const BlogGuide=()=>{
     return (
       <>
@@ -11,7 +13,7 @@ export const BlogGuide=()=>{
             />
 
             <div className="flex flex-col space-y-4 md:space-y-3 text-center md:text-left max-w-xl">
-              <p className="font-anton text-2xl sm:text-3xl md:text-4xl uppercase leading-snug">
+              <p className="font-bold text-2xl sm:text-3xl md:text-4xl uppercase ">
                 <strong> How to Brew</strong>
               </p>
 
@@ -29,9 +31,9 @@ export const BlogGuide=()=>{
           </div>
           <section>
             <div className="container mx-auto px-4 md:max-w-[970px]">
-              <a
-                href="/blogs/brew-guide/vietnamese-phin-filter"
-                className="grid grid-cols-1 lg:grid-cols-2 rounded-xl overflow-hidden bg-secondary"
+              <Link
+                to="/blogs/brew-guide/vietnamese-phin-filter"
+                className="grid grid-cols-1 lg:grid-cols-2 rounded-xl overflow-hidden bg-secondary cursor-pointer"
               >
                 <div>
                   <img
@@ -63,25 +65,25 @@ export const BlogGuide=()=>{
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
 
               <div className="pt-6 lg:pt-10 grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <div className=" rounded-xl overflow-hidden shadow-sm">
-                  <a href="/blogs/brew-guide/vietnamese-phin-filter">
+                <Link to="/blogs/brew-guide/vietnamese-phin-filter" className="flex items-center gap-1 font-semibold uppercase">
                     <img
                       loading="eager"
                       className="w-full h-[250px] object-cover"
                       src="//maycoffeecrew.co.nz/cdn/shop/articles/Phin_filter_Vietnamese_coffee.jpg?v=1701333886&amp;width=500"
                       alt="Vietnamese Phin Filter"
                     />
-                  </a>
+                  </Link>
 
                   <div className="py-4 px-4 space-y-3">
-                    <a href="/blogs/brew-guide/vietnamese-phin-filter">
+                    <Link to="/blogs/brew-guide/vietnamese-phin-filter" className="flex items-center gap-1 font-semibold uppercase">
                       <span className="uppercase font-semibold text-base line-clamp-1">
                         Vietnamese Phin Filter
                       </span>
-                    </a>
+                    </Link>
 
                     <div className="flex justify-between items-center text-sm">
                       <div className="flex items-center gap-2">
@@ -93,13 +95,12 @@ export const BlogGuide=()=>{
                         <span className="font-medium">5 min prep time</span>
                       </div>
 
-                      <a
-                        href="/blogs/brew-guide/vietnamese-phin-filter"
+                      <Link to="/blogs/brew-guide/vietnamese-phin-filter"
                         className="flex items-center gap-1 font-semibold uppercase"
                       >
                         <span>Read more</span>
                         <i className="fa-solid fa-arrow-right text-xs"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

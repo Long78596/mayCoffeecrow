@@ -184,7 +184,7 @@ export const Header = () => {
         </div>
 
         {/* === giao diện trên MOBILE  === */}
-        <div className="block md:hidden">
+        <div className="block md:hidden py-11">
           <div className="fixed top-0 left-0 w-full z-[999]">
             {/* Navbar mobile */}
             {/* Marquee banner */}
@@ -202,7 +202,9 @@ export const Header = () => {
               <button onClick={toggleMenu} className="cursor-pointer">
                 <FaBars className="h-6 w-6" />
               </button>
-              <img src="/logo.svg" className="h-8" alt="Logo" />
+              <Link to="/">
+                <img src="/logo.svg" className="h-8" alt="Logo" />
+              </Link>
               <div className="flex gap-3 items-center">
                 <Link to="#" className="cursor-pointer">
                   <FaSearch className="h-5 w-5" />
